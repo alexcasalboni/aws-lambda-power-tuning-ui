@@ -31,7 +31,7 @@ function custom_tooltip(tooltipModel) {
 
 function main() {
     const parts = window.location.hash.slice(1).split(";");
-    const sizes = decode(parts[0], Int16Array);
+    const sizes = decode(parts[0]);
     const times = decode(parts[1]);
     const costs = decode(parts[2]);
     console.log(sizes, times, costs);
